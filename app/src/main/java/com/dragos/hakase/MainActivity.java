@@ -1,16 +1,11 @@
 package com.dragos.hakase;
 
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-@SuppressLint("UsingOnClickInXml")
 public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "com.dragos.hakase.MESSAGE";
