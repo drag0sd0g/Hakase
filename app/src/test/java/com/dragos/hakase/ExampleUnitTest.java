@@ -1,4 +1,4 @@
-package com.example.hakase;
+package com.dragos.hakase;
 
 import org.junit.Test;
 
