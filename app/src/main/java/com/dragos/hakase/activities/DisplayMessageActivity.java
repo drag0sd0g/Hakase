@@ -1,10 +1,12 @@
-package com.dragos.hakase;
+package com.dragos.hakase.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.dragos.hakase.R;
 
 public class DisplayMessageActivity extends AppCompatActivity {
 
