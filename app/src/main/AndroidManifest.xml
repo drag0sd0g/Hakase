@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dragos.hakase">
-
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hakase">
         <service android:name=".services.LocalService" />
+        <service android:name=".services.ChatHeadService" />
         <activity android:name=".activities.DisplayMessageActivity"
             android:parentActivityName=".activities.MainActivity">
             <!-- The meta-data tag is required if you support API level 15 and lower -->

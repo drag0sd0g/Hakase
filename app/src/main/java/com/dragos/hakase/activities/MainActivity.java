@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.dragos.hakase.R;
+import com.dragos.hakase.services.ChatHeadService;
 import com.dragos.hakase.services.LocalService;
 
 public class MainActivity extends AppCompatActivity {
@@ -63,9 +64,10 @@ public class MainActivity extends AppCompatActivity {
                 .getCharSequenceExtra(Intent.EXTRA_PROCESS_TEXT);
         if(text != null) {
             //Toast.makeText(this, "text: " + text.toString(), Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent();
-            intent.putExtra(Intent.EXTRA_PROCESS_TEXT, "Got your text: "+text);
-            setResult(RESULT_OK, intent);
+//            Intent intent = new Intent();
+//            intent.putExtra(Intent.EXTRA_PROCESS_TEXT, "Got your text: "+text);
+//            setResult(RESULT_OK, intent);
+            startService(new Intent(getApplicationContext(), ChatHeadService.class));
         }
     }
 
