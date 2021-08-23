@@ -16,19 +16,12 @@ import com.dragos.hakase.services.ChatHeadService;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String EXTRA_MESSAGE = "com.dragos.hakase.MESSAGE";
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         startService(new Intent(getApplicationContext(), ChatHeadService.class));
-        CharSequence text = getIntent()
-                .getCharSequenceExtra(Intent.EXTRA_PROCESS_TEXT);
-        if(text != null) {
-            Toast.makeText(this, "text: " + text.toString(), Toast.LENGTH_SHORT).show();
-        }
+        Toast.makeText(this, "Hakase started", Toast.LENGTH_SHORT).show();
+        finish();
     }
 
 }
