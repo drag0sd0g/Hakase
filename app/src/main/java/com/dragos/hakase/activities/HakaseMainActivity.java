@@ -1,5 +1,6 @@
 package com.dragos.hakase.activities;
 
+import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -15,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.dragos.hakase.R;
 
-public class HakaseMainActivity extends AppCompatActivity {
+public class HakaseMainActivity extends Activity {
 
     private static final String TAG = HakaseMainActivity.class.getName();
     private static final String NOTIFICATION_CHANNEL = "Hakase";
